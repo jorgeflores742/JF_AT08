@@ -30,3 +30,7 @@ build
 
 # IDE
 .idea
+
+#Custom
+credentials.yml
+ubuntuuu.pem
