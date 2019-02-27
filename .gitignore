@@ -12,7 +12,7 @@
 
 # Package Files
 *.jar
-!task10/gradle-jenkins-at08/gradle/wrapper/gradle-wrapper.jar
+!task10/gradle-java-at08/gradle/wrapper/gradle-wrapper.jar
 *.war
 *.nar
 *.ear

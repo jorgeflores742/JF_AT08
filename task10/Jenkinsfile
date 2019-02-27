@@ -24,9 +24,9 @@ pipeline {
 
     post {
         always {
-            // archiveArtifacts artifacts: 'gradle-jenkins-at08/**/gradle-wrapper.jar', fingerprint: true
-            archiveArtifacts artifacts: 'build/libs/**/*.jar', fingerprint: true
-            junit 'build/reports/**/*.xml'
+            archiveArtifacts artifacts: 'gradle-java-at08/build/libs/**/*.jar', fingerprint: true
+            archiveArtifacts artifacts: 'gradle-java-at08/build/libs/**/*.war', fingerprint: true
+            junit 'gradle-java-at08/build/test-results/**/*.xml'
         }
     }
 }
