@@ -10,8 +10,9 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
+# Package Files
 *.jar
+!gradle-jenkins-at08/**/gradle-wrapper.jar
 *.war
 *.nar
 *.ear
@@ -24,6 +25,10 @@ hs_err_pid*
 
 # Ignore Gradle project-specific cache directory
 .gradle
+.settings
+.classpath
+.project
+bin
 
 # Ignore Gradle build output directory
 build
