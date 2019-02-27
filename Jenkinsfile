@@ -5,14 +5,18 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				sh './task10/gradle-java-at08/gradlew clean build -p task10/gradle-java-at08'
+		sh './task10/gradle-java-at08/gradlew clean build -p task10/gradle-java-at08'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
+<<<<<<< HEAD
 				sh './task10/gradle-java-at08/gradlew test -p task10/gradle-java-at08'
                 sh './task10/gradle-java-at08/gradlew check -p task10/gradle-java-at08'
+=======
+		sh './task10/gradle-java-at08/gradlew test -p task10/gradle-java-at08'
+>>>>>>> 1c4340140a1c335991c133f04e26c80c6a14143d
             }
         }
         stage('Deploy') {
