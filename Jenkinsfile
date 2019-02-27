@@ -5,7 +5,6 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'git add -f task10/gradle-jenkins-at08/gradle/wrapper/gradle-wrapper.jar'
 		        sh 'task10/gradle-java-at08/gradlew clean build -p task10/gradle-java-at08'
             }
         }
